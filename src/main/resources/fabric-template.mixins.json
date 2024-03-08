@@ -1,6 +1,6 @@
 {
 	"required": true,
-	"package": "fabrictemplate.mixin",
+	"package": "dev.jaegyu.sdv.mixin",
 	"compatibilityLevel": "JAVA_17",
 	"mixins": [
 		"ExampleMixin"

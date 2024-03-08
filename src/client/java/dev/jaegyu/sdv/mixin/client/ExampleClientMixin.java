@@ -1,4 +1,4 @@
-package fabrictemplate.mixin.client;
+package dev.jaegyu.sdv.mixin.client;
 
 import net.minecraft.client.MinecraftClient;
 import org.spongepowered.asm.mixin.Mixin;

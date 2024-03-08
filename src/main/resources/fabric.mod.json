@@ -1,8 +1,8 @@
 {
 	"schemaVersion": 1,
-	"id": "fabric-template",
+	"id": "sdv",
 	"version": "${version}",
-	"name": "fabric-template",
+	"name": "sdv",
 	"description": "This is a template mod I use for my own projects. You can use this if you'd like, however I cannot guarantee support for it.",
 	"authors": [
 		"JaegyuDev"
@@ -16,19 +16,19 @@
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"dev.jaegyu.fabrictemplate.Fabrictemplate"
+			"dev.jaegyu.sdv.Sdv"
 		],
 		"client": [
-			"dev.jaegyu.fabrictemplate.FabrictemplateClient"
+			"dev.jaegyu.sdv.SdvClient"
 		],
 		"fabric-datagen": [
-			"dev.jaegyu.fabrictemplate.FabrictemplateDataGenerator"
+			"dev.jaegyu.sdv.SdvDatagen"
 		]
 	},
 	"mixins": [
-		"fabric-template.mixins.json",
+		"sdv.mixins.json",
 		{
-			"config": "fabric-template.client.mixins.json",
+			"config": "sdv.client.mixins.json",
 			"environment": "client"
 		}
 	],

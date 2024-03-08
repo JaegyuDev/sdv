@@ -48,9 +48,12 @@ dependencies {
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
 	
 	// These are for testing. If you don't plan on testing just delete these and the example test.
+	testImplementation("org.mockito:mockito-core:5.11.0")
 	testImplementation(platform('org.junit:junit-bom:5.10.2'))
 	testImplementation('org.junit.jupiter:junit-jupiter')
 	testRuntimeOnly('org.junit.platform:junit-platform-launcher')
+
+	testImplementation("net.minecraft:minecraft-common-e7cf13955e:1.20.4-net.fabricmc.yarn.1_20_4.1.20.4+build.3-v2")
 }
 
 processResources {
@@ -99,9 +102,9 @@ publishing {
 }
 
 // Again, uncomment if you plan to use tests.
-//test {
-//	useJUnitPlatform()
-//	testLogging {
-//		events "passed", "skipped", "failed"
-//	}
-//}
+test {
+	useJUnitPlatform()
+	testLogging {
+		events "passed", "skipped", "failed"
+	}
+}
