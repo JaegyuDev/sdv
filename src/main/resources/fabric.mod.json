@@ -1,0 +1,42 @@
+{
+	"schemaVersion": 1,
+	"id": "fabric-template",
+	"version": "${version}",
+	"name": "fabric-template",
+	"description": "This is a template mod I use for my own projects. You can use this if you'd like, however I cannot guarantee support for it.",
+	"authors": [
+		"JaegyuDev"
+	],
+	"contact": {
+		"homepage": "https://github.com/JaegyuDev/fabric-template",
+		"sources": "https://github.com/JaegyuDev/fabric-template"
+	},
+	"license": "BSD-3-Clause",
+	"icon": "assets/fabric-template/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"dev.jaegyu.fabrictemplate.Fabrictemplate"
+		],
+		"client": [
+			"dev.jaegyu.fabrictemplate.FabrictemplateClient"
+		],
+		"fabric-datagen": [
+			"dev.jaegyu.fabrictemplate.FabrictemplateDataGenerator"
+		]
+	},
+	"mixins": [
+		"fabric-template.mixins.json",
+		{
+			"config": "fabric-template.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.15.7",
+		"minecraft": "~1.20.4",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {}
+}
